@@ -1,1 +1,1 @@
--e git+https://github.com/hkLolgast/AoCHelpers.git#egg=AoCHelpers
+git+https://github.com/hkLolgast/AoCHelpers@2016
