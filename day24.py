@@ -47,7 +47,7 @@ def solve(inp, part, debug=False):
         if dist < shortest_dist:
             shortest_dist = dist
             shortest_path = (0,) + order
-    print(shortest_path, shortest_dist)
+    # print(shortest_path, shortest_dist)
     return shortest_dist
 
 def main(debug = False):

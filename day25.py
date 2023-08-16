@@ -106,12 +106,12 @@ def solve(inp, part, debug=False):
         try:
             status, result, final_registers = run_code(commands, registers)
             if status:
-                print('Found!')
+                # print('Found!')
                 return registers['a']
             else:
                 if registers['a'] == 158 or len(result) > best_length:
                     best_length = len(result)
-                print(registers['a'], result, final_registers)
+                # print(registers['a'], result, final_registers)
                 # else:
                 #     print(registers['a'])
         except AssertionError as e:

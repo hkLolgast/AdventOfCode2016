@@ -41,8 +41,8 @@ def solve(inp, part, debug=False):
                     babs.append(b + a + b)
                 else:
                     if a + b + a in babs:
-                        if debug:
-                            print(ip)
+                        # if debug:
+                        #     print(ip)
                         count += 1
                         break
                     abas.append(b + a + b)

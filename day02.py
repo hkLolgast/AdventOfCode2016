@@ -37,8 +37,8 @@ def solve(inp, part, debug=False):
                 if new_loc[0] == 2 and 0 <= new_loc[1] <= 4:
                     loc = new_loc
         
-        if debug:
-            print(loc)
+        # if debug:
+        #     print(loc)
         if part == 1:
             password += ['123', '456', '789'][loc[0]][loc[1]]
         else:

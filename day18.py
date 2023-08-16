@@ -20,9 +20,9 @@ def solve(inp, part, debug=False):
             new_row.append(is_trap)
         new_row.append(rows[-1][-2])
         rows.append(new_row)
-    if debug:
-        for row in rows:
-            print(''.join('^' if c else '.' for c in row))
+    # if debug:
+    #     for row in rows:
+    #         print(''.join('^' if c else '.' for c in row))
     return sum(len(row) - sum(row) for row in rows)
 
 def main(debug = False):

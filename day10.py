@@ -57,15 +57,15 @@ def solve(inp, part, debug=False):
                 outputs[high_value] = high
 
             bot['inputs'] = []
-            if debug:
-                for bot in bots:
-                    print(bots[bot])
-                print(to_check)
-                print(new_to_check)
-                print()
+            # if debug:
+            #     for bot in bots:
+            #         print(bots[bot])
+                # print(to_check)
+                # print(new_to_check)
+                # print()
         to_check = new_to_check
     
-    print(outputs[0], outputs[1], outputs[2])
+    # print(outputs[0], outputs[1], outputs[2])
     return outputs[0] * outputs[1] * outputs[2]
 
 def main(debug = False):

@@ -27,8 +27,8 @@ def solve(inp, part, debug=False):
                 look_index = match.end() + length
                 match = pattern.search(line, look_index)
             decoded += line[look_index:]
-            if debug:
-                print(decoded, len(decoded))
+            # if debug:
+            #     print(decoded, len(decoded))
 
             tot += len(decoded)
         else:
@@ -59,8 +59,8 @@ def solve(inp, part, debug=False):
                         break
                     c = chars[i]
             tot += sum(c[1] for c in chars)
-            if debug:
-                print(sum(c[1] for c in chars))
+            # if debug:
+            #     print(sum(c[1] for c in chars))
 
 
     return tot

@@ -42,8 +42,9 @@ def solve(inp, part, debug=False):
                         continue
                     new_ind = (ascii_lowercase.index(c) + id) % 26
                     decrypted_name += ascii_lowercase[new_ind]
-                if 'north' in decrypted_name or debug:
-                    print(decrypted_name, id)
+                if 'north' in decrypted_name:
+                    # print(decrypted_name, id)
+                    return id
 
     return tot
 
